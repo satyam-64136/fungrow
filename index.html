@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Funngro Revamp</title>
+</head>
+<body>
+
+  <header>
+    <div id="navbar-placeholder"></div>
+  </header>
+
+  <h1>Smart Teenagers meet Smart Companies</h1>
+
+
+<!-- User card -->
+  <div class="card-container">
+    <div class="card box" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <img src="/images/Teenager.jpg" alt="Teenager">
+      <div class="card-content">
+        <div class="card-title">Teenager</div>
+        <div class="card-description">
+          </div>
+      </div>
+    </div>
+
+    <div class="card box" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <img src="/images/Parent.jpg" alt="Parent">
+      <div class="card-content">
+        <div class="card-title">Parent</div>
+        <div class="card-description">
+          </div>
+      </div>
+    </div>
+
+    <div class="card box" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <img src="/images/Company.jpg" alt="Company">
+      <div class="card-content">
+        <div class="card-title">Company</div>
+        <div class="card-description">
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Embedded YouTube video -->
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/I0XgtabN8rI?si=W5iHy9RZom1oBXwa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+  <footer>
+    <p>Copyright &copy; 2024 Funngro</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    $(function(){
+      // Load navbar using jQuery
+      $("#navbar-placeholder").load("navbar.html");
+    });
+  </script>
+</body>
+</html>
