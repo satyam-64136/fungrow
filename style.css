@@ -1,5 +1,5 @@
 body {
-  background-color: #6e6fa3;
+  background-color: #181c2c;
   color: rgba(255, 255, 255, 0.89);
   font-family: Helvetica;
   text-align: center;
@@ -17,13 +17,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth hover effect */
 }
 
 .card img {
   width: 100%;
-  opacity: 1;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .card-title {
@@ -44,9 +43,9 @@ body {
 }
 
 .card-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Add space around the cards (optional) */
+  flex-wrap: wrap; /* Allow wrapping to next line if needed */
 }
 
 .card .card-content {
@@ -54,6 +53,43 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);  /* Enlarge the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Increase shadow on hover */
+}
+
+.p {
+  margin-top: 5vh; 
+  font-size: larger;
+}
+
+.video-container {
+  width: 50%; /* Adjust the width of the video container */
+  margin-left: auto; /* Align to the right */
+  margin-right: 0; /* Reset margin-right */
+  margin-top: 5vh; /* Adjust margin-top as needed */
+}
+
+
+.content {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.paragraph {
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+  font-size: x-large;
+}
+
+.video {
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .video-container {
+    width: 100%; /* Make video container full width on smaller screens */
+    margin: 5vh auto; /* Center video container */
+  }
 }
