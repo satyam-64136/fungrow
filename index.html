@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link the CSS file -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/2a283bf6a0.js" crossorigin="anonymous"></script>
   <title>Funngro Revamp</title>
 </head>
 <body>
@@ -14,15 +15,12 @@
 
   <h1>Smart Teenagers meet Smart Companies</h1>
 
-
-<!-- User card -->
   <div class="card-container">
     <div class="card box" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
       <img src="./images/Teenager.jpg" alt="Teenager">
       <div class="card-content">
         <div class="card-title">Teenager</div>
-        <div class="card-description">
-          </div>
+        <div class="card-description"></div>
       </div>
     </div>
 
@@ -30,8 +28,7 @@
       <img src="./images/Parent.jpg" alt="Parent">
       <div class="card-content">
         <div class="card-title">Parent</div>
-        <div class="card-description">
-          </div>
+        <div class="card-description"></div>
       </div>
     </div>
 
@@ -39,24 +36,36 @@
       <img src="./images/Company.jpg" alt="Company">
       <div class="card-content">
         <div class="card-title">Company</div>
-        <div class="card-description">
-          </div>
+        <div class="card-description"></div>
       </div>
     </div>
   </div>
 
-
   <p class="p">Lakhs of Teens love Funngro, Hundreds of Companies love Funngro and now Sharks also loved Funngro.</p>
 
-  <div class="content">
-  <div class="paragraph">
-    <p>We believe teens are capable of amazing things.<br><br> Funngro was created to empower young people by connecting them with businesses for exciting projects.<br><br> It's a win-win: teens gain valuable experience and businesses discover a talented new generation of workers..</p>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/I0XgtabN8rI?si=W5iHy9RZom1oBXwa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
-    <!-- Embedded YouTube video -->
-    <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/I0XgtabN8rI?si=W5iHy9RZom1oBXwa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <div class="content">
+    <div class="paragraph">
+      <p>
+        <li>We believe teens are capable of amazing things.</li>
+        <br><br>
+        <li>Funngro was created to empower young people by connecting them with businesses for exciting projects.</li>
+        <br><br>
+        <li>It's a win-win: teens gain valuable experience and businesses discover a talented new generation of workers.</li>
+      </p>
     </div>
   </div>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/kanon_0_o" class="social-icon instagram"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://github.com/satyam-64136" class="social-icon discord"><i class="fab fa-github fa-2x"></i></a>
+    <a href="https://www.snapchat.com/add/satyamkr0_0?sender_web_id=3fd3fbc3-4ef7-4025-9590-c4adb944180c&device_type=desktop&is_copy_url=true" class="social-icon snapchat"><i class="fab fa-snapchat fa-2x"></i></a>
+    <a href="https://wa.me/919162591726?text=Hello!" class="social-icon whatsapp"><i class="fab fa-whatsapp fa-2x"></i></a>
+</div> 
+
   <footer>
     <p>Copyright &copy; 2024 Funngro</p>
   </footer>
@@ -64,7 +73,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script>
     $(function(){
-      // Load navbar using jQuery
       $("#navbar-placeholder").load("navbar.html");
     });
   </script>

@@ -1,4 +1,5 @@
 body {
+  padding-top: 1%;
   background-color: #181c2c;
   color: rgba(255, 255, 255, 0.89);
   font-family: Helvetica;
@@ -17,7 +18,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth hover effect */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card img {
@@ -37,59 +38,102 @@ body {
   display: none;
 }
 
-.card .card-description {
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-}
-
 .card-container {
-  display: flex; /* Use flexbox for horizontal alignment */
-  justify-content: space-between; /* Add space around the cards (optional) */
-  flex-wrap: wrap; /* Allow wrapping to next line if needed */
-}
-
-.card .card-content {
-  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card:hover {
-  transform: scale(1.05);  /* Enlarge the card on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Increase shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .p {
-  margin-top: 5vh; 
-  font-size: larger;
+  margin-top: 5vh;
+  font-size: xx-large;
 }
 
 .video-container {
-  width: 50%; /* Adjust the width of the video container */
-  margin-left: auto; /* Align to the right */
-  margin-right: 0; /* Reset margin-right */
-  margin-top: 5vh; /* Adjust margin-top as needed */
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
-
 
 .content {
   display: flex;
-  align-items: center; /* Align items vertically in the center */
+  align-items: center;
 }
 
 .paragraph {
-  flex: 1; /* Take up remaining space */
+  text-align: left;
+  flex: 1;
   padding: 20px;
   font-size: x-large;
 }
 
-.video {
-  flex: 1; /* Take up remaining space */
-  padding: 20px;
+@media (max-width: 1300px) {
+  body {
+    padding-top: 10vh;
+  }
 }
 
-
-@media (max-width: 768px) {
-  .video-container {
-    width: 100%; /* Make video container full width on smaller screens */
-    margin: 5vh auto; /* Center video container */
+@media (max-width: 800px) {
+  body {
+    padding-top: 10vh;
   }
+  .video-container {
+    width: 100%;
+    margin: 5vh auto;
+  }
+  .paragraph {
+    order: -1;
+    margin-top: 20px;
+  }
+}
+
+.social-links {
+  position: fixed;
+  top: 94%;
+  right: 20px;
+  display: flex;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+  margin: 12px 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  background-color: #e9e7e7;
+  margin: 5px;
+}
+
+.social-icon:hover {
+  transform: scale(1.4); 
+  transition: all 0.2s linear ;
+}
+
+.social-icon.instagram {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); 
+}
+
+.social-icon.github {
+  background-color: #7289da;
+}
+
+.social-icon.snapchat {
+  background-color: #fffb00;
+}
+
+.social-icon.whatsapp {
+  background: #1be770; 
 }
